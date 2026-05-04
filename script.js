@@ -24,7 +24,14 @@ document.getElementById("add_inicio").addEventListener("click", () => {
     input.value = ""
     renderizar()
 })
-document.getElementById()
+document.getElementById("rv_ultimo").addEventListener("click", () => {
+    lista_nomes.pop()
+    renderizar()
+})
+document.getElementById("rv_primeiro").addEventListener("click", () => {
+    lista_nomes.shift()
+    renderizar()
+})
 
 
 
