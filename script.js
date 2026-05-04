@@ -11,6 +11,16 @@ function renderizar() {
         lista_pagina.appendChild(elemento)
     }
 }
+function contar_nomes(){
+    let contador = 0
+
+    for(let nome of lista_nomes){
+        if(nome.length > 5){
+            contador++
+        }
+    }
+    return contador
+}
 
 document.getElementById("add_final").addEventListener("click", () => {
     const input = document.getElementById("inputnome")
